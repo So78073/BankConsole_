@@ -1,0 +1,15 @@
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\bin\Debug\net6.0\ProjetoAprendizado.exe
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\bin\Debug\net6.0\ProjetoAprendizado.deps.json
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\bin\Debug\net6.0\ProjetoAprendizado.runtimeconfig.json
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\bin\Debug\net6.0\ProjetoAprendizado.dll
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\bin\Debug\net6.0\ProjetoAprendizado.pdb
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.csproj.AssemblyReference.cache
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.AssemblyInfoInputs.cache
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.AssemblyInfo.cs
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.csproj.CoreCompileInputs.cache
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.dll
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\refint\ProjetoAprendizado.dll
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.pdb
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ProjetoAprendizado.genruntimeconfig.cache
+C:\Users\So7 ^^\Downloads\aprendizado\ProjetoAprendizado\ProjetoAprendizado\obj\Debug\net6.0\ref\ProjetoAprendizado.dll

@@ -1,0 +1,5 @@
+the .exe file is in the bin folder!
+
+this is a learning project I did with less than 1 week learning C#.
+
+I did without database !! so it has some limitations!!
