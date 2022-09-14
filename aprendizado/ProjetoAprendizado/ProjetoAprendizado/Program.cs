@@ -7,13 +7,12 @@ namespace ProjetoAprendizadp{
     class Program{
 
         enum Opcoes1 { Registrar = 1, Entrar, Encerrar}
-
         static Bank Conta = new Bank();
 
 
         static void Main() 
         {
-
+            Console.WriteLine("V1.1.0");
             bool WhileConsoleTrue = true;
 
             while (WhileConsoleTrue == true)
@@ -26,12 +25,13 @@ namespace ProjetoAprendizadp{
             }
 
 
-            Console.WriteLine("\n                      fim do programa : Obrigado por executar!!");
-
+            Console.WriteLine($"\n -- fim do programa : Obrigado por executar!! --");
+            Console.ReadLine();
         }
 
-        static bool ControlMenu(int aba)
+        static bool ControlMenu(int aba) // essa função controla o menu ->
         {
+            
             switch (aba)
             {
                 case 1:
@@ -42,8 +42,7 @@ namespace ProjetoAprendizadp{
 
                 case 2:
                     Console.Clear();
-                    EntrarFunc();
-                    return true;
+                    return EntrarFunc();
                     break;
 
                 case 3:
@@ -58,28 +57,36 @@ namespace ProjetoAprendizadp{
 
         }
 
-        static void EntrarFunc()
+        static bool EntrarFunc() // função de entrada da conta -> 
         {
             Console.Clear ();
-            Console.Write("-- Login --\n\nNome Da Conta: ");
-            string nome = Console.ReadLine();
+            Console.Write("-- Login --\n\nNome Da Conta: "); 
+            string nome = Console.ReadLine(); // pega o nome da classe Bank em Class1
 
             Console.Write("\nDigite sua senha: ");
-            string senha = Console.ReadLine ();
+            string senha = Console.ReadLine (); // pega a senha da classe Bank em Class1
 
-            if(nome == Conta.nome && senha == Conta.senha) 
+            // verificação se a senha esta correta, ou a conta é existente. -> 
+            if (nome == Conta.nome && senha == Conta.senha) 
             { 
                 Console.Clear(); 
                 Console.WriteLine("-- Login Bem Sucedido!!!! --");
 
-                Console.WriteLine("Codigo feito com um aprendizado de menos de 1 semana de C#" +
-                    " ,espero que tenha gostado!!   ~~ Pedro Soares De Assis  V 1.0.0");
+                Console.WriteLine("\nCodigo feito com um aprendizado de menos de 1 semana de C#" +
+                    " ,espero que tenha gostado!!  \n ~~ Pedro Soares De Assis  V 1.1.0");
+
+                return false;
             }
-            else { Console.Clear(); Console.WriteLine("!! >> Login inexistente ou errado << !!"); }
+
+            else // se não existir ou a senha estiver errada ele volta pra pagina 1 (Opções)
+            { 
+                Console.Clear(); Console.WriteLine("!! >> Login inexistente ou incorreto<< !!");
+                return true; 
+            }
 
         }
 
-        static void LoginFunc()
+        static void LoginFunc() // Função de lingin de novo usuario ->
         {
             Console.Clear ();
             bool CodeOn = true;
