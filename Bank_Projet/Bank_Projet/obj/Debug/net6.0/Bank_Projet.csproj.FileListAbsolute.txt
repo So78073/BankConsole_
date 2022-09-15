@@ -1,0 +1,15 @@
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\bin\Debug\net6.0\Bank_Projet.exe
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\bin\Debug\net6.0\Bank_Projet.deps.json
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\bin\Debug\net6.0\Bank_Projet.runtimeconfig.json
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\bin\Debug\net6.0\Bank_Projet.dll
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\bin\Debug\net6.0\Bank_Projet.pdb
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.csproj.AssemblyReference.cache
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.AssemblyInfoInputs.cache
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.AssemblyInfo.cs
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.csproj.CoreCompileInputs.cache
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.dll
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\refint\Bank_Projet.dll
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.pdb
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\Bank_Projet.genruntimeconfig.cache
+C:\Users\So7 ^^\Documents\GitHub\BankConsole_\Bank_Projet\Bank_Projet\obj\Debug\net6.0\ref\Bank_Projet.dll
