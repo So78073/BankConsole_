@@ -24,6 +24,13 @@ namespace PaginaPrincipal
                 {
                     Console.Write("V2.0.0\n");
 
+                    if (!Nome_.ContainsKey(1234))
+                    {
+                        Nome_.Add(1234, "jose");
+                        Senha_.Add(1234, "123");
+                        Saldo_.Add(1234, 100f);
+                    }
+
                     Console.Write("\n -- wellcome to BankSole --\n\n " +
                         "(1) Register \n " +
                         "(2) Login \n " +
@@ -103,10 +110,10 @@ namespace PaginaPrincipal
             {
                 Console.Write("-- Register New Acount --\n\n");
 
-                Console.Write(" / Access Key(0000): ");
+                Console.Write(" (1) to exit \n / Access Key(0000): ");
                 Key = int.Parse(Console.ReadLine());
 
-                if (Key > 1000 && Key < 9999) 
+                if (Key > 1000 && Key < 9999 && !Nome_.ContainsKey(Key)) 
                 { 
                     Console.Write("\n / Your name: ");
                     Name = Console.ReadLine();
@@ -130,6 +137,7 @@ namespace PaginaPrincipal
                     else { Console.Clear();  Console.Write("--! passwords are not the same "); }
 
                 }
+                else if(Key == 1) { Console.Clear(); Wloop2 = false; }
                 else { Console.Clear();  Console.Write("--! invalid Key "); }
             }
 
@@ -140,9 +148,9 @@ namespace PaginaPrincipal
         static void Login()
         {
             Console.Clear();
-            int Key;
-            string Name;
-            string Password;
+            int Key = 0000;
+            string Name = "";
+            string Password = "";
 
             bool Wloop3 = true;
 
@@ -150,36 +158,41 @@ namespace PaginaPrincipal
             {
                 Console.Write("-- Login Page --\n");
 
-                Console.Write("\n / Key Acount: ");
+                Console.Write("\n (1) to exit \n / Key Acount: ");
+
                 Key = int.Parse(Console.ReadLine());
 
                 if(Key > 1000 && Key < 9999)
                 {
                     if (Nome_.ContainsKey(Key))
                     {
-                        Console.Write("\n / Name: ");
-                        Name = Console.ReadLine();
-
-                        Console.Write("\n / Passworld: ");
-                        Password = Console.ReadLine();
-
-                        if (Nome_[Key] == Name)
+                        if (Nome_.ContainsKey(Key))
                         {
-                            if (Senha_[Key] == Password)
+                            Console.Write("\n / Name: ");
+                            Name = Console.ReadLine();
+
+                            Console.Write("\n / Passworld: ");
+                            Password = Console.ReadLine();
+
+                            if (Nome_[Key] == Name)
                             {
-                                Console.Clear();
-                                Console.Write("-- Login successfully accessed --");
-                                AcountAtive = Key;
-                                Page = "user";
-                                Console.Clear();
-                                Wloop3 = false;
+                                if (Senha_[Key] == Password)
+                                {
+                                    Console.Clear();
+                                    Console.Write("-- Login successfully accessed --");
+                                    AcountAtive = Key;
+                                    Page = "user";
+                                    Console.Clear();
+                                    Wloop3 = false;
+                                }
+                                else { Console.Clear(); Console.Write(" -- incorret password "); }
                             }
-                            else { Console.Clear(); Console.Write(" -- incorret password "); }
+                            else { Console.Clear(); Console.Write(" -- Acount not found "); }
                         }
-                        else { Console.Clear(); Console.Write(" -- Acount not found "); }
+                        else { Console.Clear(); Console.Write(" -- Key not exist "); }
                     }
-                    else { Console.Clear(); Console.Write(" -- Key not exist "); }
                 }
+                else if (Key == 1) { Console.Clear(); Wloop3 = false; }
                 else
                 { 
                   Console.Clear(); 
@@ -195,14 +208,14 @@ namespace PaginaPrincipal
         {
             bool Wloop = true;
 
-            float Money;
-            int People;
+            float Money = 0;
+            int People = 0000;
             Console.Clear();
             while (Wloop == true)
             {
                 Console.Write("-- Deposit --");
 
-                Console.Write("\n\n To (Key Code): ");
+                Console.Write("\n\n To (Key Code) or (1) to exit: ");
                 People = int.Parse(Console.ReadLine());
 
                 Console.Write("\n How Much ?: ");
@@ -212,27 +225,43 @@ namespace PaginaPrincipal
 
                 if (People > 1000 && People < 9999)
                 {
-                    if (Saldo_[AcountAtive] - Money >= 0)
+                    if (Nome_.ContainsKey(People))
                     {
-                        float NewSaldo = Saldo_[AcountAtive] - Money;
-                        Saldo_.Remove(AcountAtive);
-                        Saldo_.Add(AcountAtive, NewSaldo);
+                        if (Saldo_[AcountAtive] - Money >= 0)
+                        {
+                            float NewSaldo = Saldo_[AcountAtive] - Money;
+                            Saldo_[People] += Money;
+                            Saldo_.Remove(AcountAtive);
+                            Saldo_.Add(AcountAtive, NewSaldo);
 
-                        Console.Clear();
-                        Console.Write(" -- transfer completed ");
-                        Wloop = false;
+                            Console.Clear();
+                            Console.WriteLine(" > {0:c} ->  ({1}) -> ({2}) .\n", Money, Nome_[AcountAtive], Nome_[People]);
+                            Console.Write(" -- transfer completed  ");
+                            Wloop = false;
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Console.Write(" -- Dinheiro insuficiente ");
+                        }
                     }
-                    else
+                    else 
                     {
                         Console.Clear();
-                        Console.Write(" -- Dinheiro insuficiente ");
+                        Console.Write(" -- Count not found");
                     }
                 }
+
+                else if(People == 1) { Wloop = false;  }
+
                 else
                 {
                     Console.Clear();
                     Console.Write(" -- Invalid Key ");
                 }
+
+
+
             }
                 
         }
